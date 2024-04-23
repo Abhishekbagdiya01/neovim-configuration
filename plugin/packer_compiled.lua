@@ -190,12 +190,6 @@ _G.packer_plugins = {
     path = "/home/abhishek/.local/share/YugaVim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["transparent.nvim"] = {
-    config = { "\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\17global_alpha\4š³æÌ\t™³¦ÿ\3\venable\2\nsetup\16transparent\frequire\0" },
-    loaded = true,
-    path = "/home/abhishek/.local/share/YugaVim/site/pack/packer/start/transparent.nvim",
-    url = "https://github.com/xiyaowong/transparent.nvim"
-  },
   ["vim-be-good"] = {
     loaded = true,
     path = "/home/abhishek/.local/share/YugaVim/site/pack/packer/start/vim-be-good",
@@ -213,10 +207,6 @@ time([[Defining packer_plugins]], false)
 time([[Config for codeium.nvim]], true)
 try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\fcodeium\frequire\0", "config", "codeium.nvim")
 time([[Config for codeium.nvim]], false)
--- Config for: transparent.nvim
-time([[Config for transparent.nvim]], true)
-try_loadstring("\27LJ\2\n`\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\2\17global_alpha\4š³æÌ\t™³¦ÿ\3\venable\2\nsetup\16transparent\frequire\0", "config", "transparent.nvim")
-time([[Config for transparent.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

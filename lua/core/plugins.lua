@@ -93,15 +93,16 @@ return require("packer").startup(function(use)
        	use {
 	  "folke/which-key.nvim",
 	  	}
-use {
-  "xiyaowong/transparent.nvim", -- Plugin name and author
-  config = function() -- Optional configuration function
-    require("transparent").setup {
-      enable = true, -- Enable transparency (default: false)
-      global_alpha = 0.8, -- Adjust opacity (0.0 - 1.0, default: 1.0)
-    }
-  end
-}
+-- use {
+--   "xiyaowong/transparent.nvim", -- Plugin name and author
+--   config = function() -- Optional configuration function
+--     require("transparent").setup {
+--       enable = true, -- Enable transparency (default: false)
+--       global_alpha = 0.8, -- Adjust opacity (0.0 - 1.0, default: 1.0)
+--       transparent_groups = { "NeotreeToggle" },
+--     }
+--   end
+-- }
 
 
 	-- My plugins here
