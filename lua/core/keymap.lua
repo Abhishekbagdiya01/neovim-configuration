@@ -7,8 +7,9 @@ vim.o.relativenumber = true
 vim.o.number = true
 
 vim.opt.hlsearch = true
-keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+keymap.set({ "i" }, "<C-c>", "<Esc>", { noremap = true })
 
+keymap.set("i","C-c","<Esc>")
 -- Shortcut for faster save and quit
 keymap.set("n", "<leader>w", "<cmd>update<cr>", { silent = true, desc = "save buffer" })
 
@@ -63,5 +64,13 @@ keymap.set("n", "<leader>v", "printf('`[%s`]', getregtype()[0])", {
 -- Always use very magic mode for searching
 --keymap.set("n", "/", [[/\v]])
 
+--Trouble
+-- Lua
+vim.keymap.set("n", "<leader>xx", function() require("trouble").toggle() end)
+vim.keymap.set("n", "<leader>xw", function() require("trouble").toggle("workspace_diagnostics") end)
+vim.keymap.set("n", "<leader>xd", function() require("trouble").toggle("document_diagnostics") end)
+vim.keymap.set("n", "<leader>xq", function() require("trouble").toggle("quickfix") end)
+vim.keymap.set("n", "<leader>xl", function() require("trouble").toggle("loclist") end)
+vim.keymap.set("n", "gR", function() require("trouble").toggle("lsp_references") end)
 
 
